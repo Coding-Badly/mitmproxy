@@ -41,7 +41,7 @@ By default, the mitmproxy CA certificate is located in this file: `~/.mitmproxy/
 ### Instructions
 
 - Enter your certificate folder: `cd ~/.mitmproxy/`
-- Generate hash and copy certificate : ``hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.cer | head -1` && cp mitmproxy-ca-cert.cer $hashed_name.0``
+- Generate hash and copy certificate : ``hashed_name=`openssl x509 -inform PEM -subject_hash_old -in mitmproxy-ca-cert.cer | head -1` && cp mitmproxy-ca-cert.cer $hashed_name.0 && echo $hashed_name.0``
 
 ## 3. Insert certificate into system certificate store
 
